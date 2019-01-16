@@ -16,8 +16,7 @@ yum -y install certbot
 2. Generate Certificates for console.<domain> and *.apps.<domain>
 
 ```
-certbot certonly --manual --preferred-challenges dns \
-  -d console.<domain>
+certbot certonly --standalone -d console.<domain>
 
 certbot certonly --manual --preferred-challenges dns \
   -d apps.<domain> -d *.apps.<domain>
