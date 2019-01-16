@@ -13,13 +13,13 @@ yum -y install epel-release
 yum -y install certbot
 ```
 
-2. Generate Certificates for console.\<domain\> and *.apps.\<domain\>
+2. Generate Certificates for console.\<your domain\> and *.apps.\<your domain\>
 
 ```
-certbot certonly --standalone -d console.<domain>
+certbot certonly --standalone -d console.<your domain>
 
 certbot certonly --manual --preferred-challenges dns \
-  -d apps.<domain> -d *.apps.<domain>
+  -d apps.<your domain> -d *.apps.<your domain>
 ```
 
 ## Installation
@@ -45,7 +45,7 @@ cd installcentos
 
 ```
 # Domain name to access the cluster
-$ export DOMAIN=<public ip address>.nip.io
+$ export DOMAIN=<your domain>
 
 # User created after installation
 $ export USERNAME=<current user name>
