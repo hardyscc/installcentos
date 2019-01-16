@@ -13,7 +13,7 @@ yum -y install epel-release
 yum -y install certbot
 ```
 
-2. Generate Certificates for console.<domain> and *.apps.<domain>
+2. Generate Certificates for console.\<domain\> and *.apps.\<domain\>
 
 ```
 certbot certonly --standalone -d console.<domain>
