@@ -9,17 +9,15 @@ This repository is a set of scripts that will allow you easily install the lates
 1. Install Certbot
 
 ```
-yum -y install epel-release 
+yum -y install epel-release
 yum -y install certbot
 ```
 
-2. Generate Certificates for console.\<your domain\> and *.apps.\<your domain\>
+2. Generate Certificates for console.\<your domain\> and \*.apps.\<your domain\>
 
 ```
-certbot certonly --standalone -d console.<your domain>
-
-certbot certonly --manual --preferred-challenges dns \
-  -d apps.<your domain> -d *.apps.<your domain>
+certbot certonly --manual --preferred-challenges dns -d console.<your domain>
+certbot certonly --manual --preferred-challenges dns -d *.apps.<your domain>
 ```
 
 ## Installation
